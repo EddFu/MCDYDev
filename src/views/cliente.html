@@ -9,9 +9,9 @@
 <body>
     <div class="container">
         <div class="header">
-            <h2>🛒 Mercado Yopal</h2>
-            <p>⏱️ Cierre: Viernes 6:00 pm</p>
-            <a href="../index.html" style="color:white;">⬅ Volver</a>
+            <h2>Mercado Yopal</h2>
+            <p>Cierre: Viernes 6:00 pm</p>
+            <a href="../index.html" style="color:white;">Volver</a>
         </div>
         
         <div id="catalogo"></div>
@@ -19,9 +19,12 @@
         <div class="card" id="carritoCard">
             <h3>Tu Reserva</h3>
             <p><strong>Total: <span id="totalReserva">$ 0</span></strong></p>
-            <label>
-                <input type="checkbox" id="ley1581"> Acepto política de tratamiento de datos (Ley 1581)
-            </label>
+
+            <div class="policy-section">
+                <label for="ley1581">Acepto política de tratamiento de datos (Ley 1581)</label>
+                <input type="checkbox" id="ley1581">    
+            </div>     
+            
             <br><br>
             <button class="btn btn-success" id="btnConfirmar" onclick="confirmarReserva()">CONFIRMAR RESERVA</button>
         </div>

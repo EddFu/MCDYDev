@@ -1,4 +1,4 @@
-/* Estilos base enfocados en accesibilidad (Productor 52 años) y móviles */
+
 :root {
     --primary-color: #2e7d32;
     --success-color: #4caf50;
@@ -13,7 +13,7 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    font-size: 18px; /* Letra grande */
+    font-size: 18px;
 }
 
 .container {
@@ -24,7 +24,6 @@ body {
 
 .text-center { text-align: center; }
 
-/* Botones Grandes y Claros */
 .btn {
     display: inline-block;
     padding: 15px 20px;
@@ -83,3 +82,23 @@ th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
 th { background-color: var(--primary-color); color: white; }
 
 .hidden { display: none; }
+
+.policy-section {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.policy-section label {
+    width: 75%;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+.policy-section input[type="checkbox"] {
+    width: auto;
+    transform: scale(1.5);
+    margin: 0;
+}
