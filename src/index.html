@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Campesino Yopal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Mercado Campesino Yopal</h1>
+        <p>Seleccione su perfil para ingresar al sistema:</p>
+        <div class="menu-grid">
+            <a href="views/productor.html" class="btn btn-primary btn-large"> Ingreso Productor</a>
+            <a href="views/cliente.html" class="btn btn-success btn-large"> Ingreso Cliente</a>
+            <a href="views/secretaria.html" class="btn btn-secondary btn-large"> Panel Secretaría</a>
+        </div>
+    </div>
+    <script src="js/db.js"></script>
+    <script>
+        initDB();
+    </script>
+</body>
+</html>

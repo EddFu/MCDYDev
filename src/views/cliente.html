@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservar - Cliente</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>🛒 Mercado Yopal</h2>
+            <p>⏱️ Cierre: Viernes 6:00 pm</p>
+            <a href="../index.html" style="color:white;">⬅ Volver</a>
+        </div>
+        
+        <div id="catalogo"></div>
+
+        <div class="card" id="carritoCard">
+            <h3>Tu Reserva</h3>
+            <p><strong>Total: <span id="totalReserva">$ 0</span></strong></p>
+            <label>
+                <input type="checkbox" id="ley1581"> Acepto política de tratamiento de datos (Ley 1581)
+            </label>
+            <br><br>
+            <button class="btn btn-success" id="btnConfirmar" onclick="confirmarReserva()">CONFIRMAR RESERVA</button>
+        </div>
+    </div>
+    <script src="../js/db.js"></script>
+    <script src="../js/reservaController.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Puesto - Productor</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Mi Puesto (Don Carlos) 🟢</h2>
+            <a href="../index.html" style="color:white;">⬅ Volver</a>
+        </div>
+        
+        <div class="card">
+            <h3>¿Qué vas a vender este sábado?</h3>
+            <form id="formOferta">
+                <div class="form-group">
+                    <label>Producto:</label>
+                    <select id="producto" required>
+                        <option value="Plátano">🍌 Plátano</option>
+                        <option value="Yuca">🥔 Yuca</option>
+                        <option value="Queso Llanero">🧀 Queso Llanero</option>
+                        <option value="Carne de Cerdo">🥩 Carne de Cerdo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Cantidad (Ej: Libras, Racimos):</label>
+                    <input type="number" id="cantidad" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label>Precio Unitario ($):</label>
+                    <input type="number" id="precio" min="100" required>
+                </div>
+                <button type="submit" class="btn btn-primary">✅ PUBLICAR PARA ESTE SÁBADO</button>
+            </form>
+        </div>
+
+        <h3>Tus ofertas publicadas:</h3>
+        <div id="listaOfertas"></div>
+    </div>
+    <script src="../js/db.js"></script>
+    <script src="../js/ofertaController.js"></script>
+</body>
+</html>
