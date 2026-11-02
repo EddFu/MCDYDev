@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// load offers
 function cargarOfertas() {
     const db = getDB();
     const contenedor = document.getElementById('listaOfertas');
